@@ -46,6 +46,7 @@ document.onkeyup = function(event) {
     allGuesses = [];
     document.getElementById("guessesMade").innerHTML = allGuesses;
     document.getElementById("correct").innerHTML = " " + computerGuess;
+    computerGuess = randomLetter[Math.floor(Math.random() * 25)];
   } else {
     guesses--;
     document.getElementById("guesses-span").innerHTML = guesses;
